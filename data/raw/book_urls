@@ -1,0 +1,3 @@
+book_urls = {'great_gatsby':'https://www.gutenberg.org/cache/epub/64317/pg64317.txt',
+'the_sun_also_rises':'https://www.gutenberg.org/cache/epub/67138/pg67138.txt',
+'a_tale_of_two_cities':'https://www.gutenberg.org/cache/epub/98/pg98.txt'}
