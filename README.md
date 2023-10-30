@@ -9,3 +9,10 @@ git clone the repo
 
 - requires python 3.10+
 run setup.sh
+
+Most times, need jupyter notebook on the virtual env. 
+With the venv activated,
+`
+pip install ipykernel  
+python -m ipykernel install --user
+`
