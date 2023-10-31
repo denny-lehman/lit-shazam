@@ -3,6 +3,6 @@ pandas
 nltk
 matplotlib
 tensorflow
-sklearn
+scikit-learn
 nltk
 ipykernel
