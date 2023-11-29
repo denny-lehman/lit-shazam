@@ -15,3 +15,10 @@ Reads data from Drive
 Encodes multiclassification data set into BERT base cased encoding format
 Trains classification layer on top of BERT pre-trained model
 Evaluate performance and run metrics
+
+4. lit_shazam_data_prep
+Prepares data from the Gutenberg Project corpus
+This notebook prepares the "official" project data, unlike notebook 1. which is for the NLTK corpus
+
+5. RoBERTa
+Notebook for building, encoding, and executing with the RoBERTa transformer
