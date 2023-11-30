@@ -6,3 +6,8 @@ tensorflow
 scikit-learn
 nltk
 ipykernel
+tensorflow_text
+tensorflow_datasets
+pydot
+transformers
+pyarrow
