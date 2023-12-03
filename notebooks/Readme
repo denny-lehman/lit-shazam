@@ -4,13 +4,13 @@ Preprocess data from NLTK literature corpus
 Creates binary labeled data -- Jane Austen author novels as the Positive class
 Creates training, validation, and testing data from the corpus and stores to Drive in parquet format
 
-2. lit_shazam_bert_basic_binary
+2. OLD: lit_shazam_bert_basic_binary
 Reads data from Drive
 Encodes binary data set into BERT base cased encoding format
 Trains classification layer on top of BERT pre-trained model
 Evaluate performance and run metrics
 
-3. lit_shazam_bert_basic_multi
+3. OLD: lit_shazam_bert_basic_multi
 Reads data from Drive
 Encodes multiclassification data set into BERT base cased encoding format
 Trains classification layer on top of BERT pre-trained model
@@ -22,3 +22,8 @@ This notebook prepares the "official" project data, unlike notebook 1. which is 
 
 5. RoBERTa
 Notebook for building, encoding, and executing with the RoBERTa transformer
+
+6. lit_shazam_bert
+Encodes multiclassification data set into BERT base uncased encoding format
+Trains classification layer on top of BERT pre-trained model
+Evaluate performance and run metrics
