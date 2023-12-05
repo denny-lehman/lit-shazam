@@ -6,6 +6,7 @@ This project will take input text and predict which author wrote it! It uses (BE
 ## Getting started
 
 git clone the repo
+https://stackoverflow.com/questions/42148841/github-clone-with-oauth-access-token
 
 - requires python 3.10+
 run setup.sh
