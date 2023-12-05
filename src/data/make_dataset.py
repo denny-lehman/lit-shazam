@@ -1,6 +1,8 @@
 import requests
 from nltk.tokenize import RegexpTokenizer
 from nltk.stem import PorterStemmer
+import time
+
 
 def get_book(url:str):
     """Requests a book from project gutenberg and returns the string as text
@@ -15,10 +17,25 @@ def get_book(url:str):
     raw_str_url = r"{}".format(url) # make raw string, otherwise / will make escape character
     try:
         r = requests.get(raw_str_url)
+        
+        if r.status_code == 403:
+            print('time out')
+            time.sleep(10)
+            r = requests.get(raw_str_url)
+        
+        # second time out
+        if r.status_code == 403:
+            print('second time out')
+            time.sleep(30)
+            r = requests.get(raw_str_url)
     
         # do url handling here
-        book = r.text
-        return book
+        if r.status_code == 200:
+            book = r.text
+            return book
+        else:
+            print(f'failed to get book, r.status_code = {r.status_code}')
+            return None
     except Exception as e:
         print(str(e))
         return None
@@ -30,7 +47,7 @@ def get_book(url:str):
 import re
 def remove_bookend(book:str)->str:
     """removes the extra end of the book in project gutenberg"""
-    end_of_book_pattern = r'\*\*\* END OF THE PROJECT GUTENBERG EBOOK [\w\d\s]+ \*\*\*'
+    end_of_book_pattern = r'\*\*\* END OF THE PROJECT GUTENBERG EBOOK [\w\d\s:]+ \*\*\*'
     match = re.search(end_of_book_pattern, book)
     if match is None:
         print('could not find project gutenberg ending')
@@ -40,7 +57,7 @@ def remove_bookend(book:str)->str:
 
 def remove_book_start(book:str)->str:
     """removes the boiler plate beginning part of the book in project gutenberg"""
-    start_of_book_pattern = r'\*\*\* START OF THE PROJECT GUTENBERG EBOOK [\w\d\s]+ \*\*\*'
+    start_of_book_pattern = r'\*\*\* START OF THE PROJECT GUTENBERG EBOOK [\w\d\s:]+ \*\*\*'
     match = re.search(start_of_book_pattern, book)
     if match is None:
         print('could not find project gutenberg beginning')
