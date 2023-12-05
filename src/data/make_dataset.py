@@ -56,7 +56,8 @@ def remove_bookend(book:str)->str:
     return book[:last_character]
 
 def remove_book_start(book:str)->str:
-    """removes the boiler plate beginning part of the book in project gutenberg"""
+    """DEPRECATED IN FAVOR OF remove_everything_before_starting_sentence
+    removes the boiler plate beginning part of the book in project gutenberg"""
     start_of_book_pattern = r'\*\*\* START OF THE PROJECT GUTENBERG EBOOK [\w\d\s:]+ \*\*\*'
     match = re.search(start_of_book_pattern, book)
     if match is None:
@@ -65,6 +66,12 @@ def remove_book_start(book:str)->str:
     first_character = match.end()
     return book[first_character:]
 
+def remove_everything_before_starting_sentence(book:str, starting_sentence:str)->str:
+    """removes the lines of text before the starting sentence of the book """
+    starting_character = book.find(starting_sentence)
+    book = book[starting_character:]
+    return book
+    
 def remove_new_line_tabs(book):
     """remmove unwanted newlines, tabs, etc from the text"""
     for char in ["\n", "\r", "\d", "\t", "\s"]:
@@ -72,6 +79,9 @@ def remove_new_line_tabs(book):
     return book
 
 
+import nltk
+nltk.download('punkt')
+from nltk.tokenize import sent_tokenize
 def convert_to_sentences(book, sentences_per_example=3):
     """returns a list of (sentences_per_example, author) pairs """
     sentences = sent_tokenize(book)
@@ -105,3 +115,8 @@ def sentence_to_bag_of_words(sentence):
     bag_of_words = ' '.join(porter_tokens)
     
     return bag_of_words
+
+def convert_examples_to_bag_of_words(examples:list):
+    """This is an orchestrator function. It's purpose is to apply the bag of words converter over each example of text.
+    The examples are a batch of sentences, which is a group, normally of 3, sentences in sequence from a text. The batch is then converted to a bag of words, converting the examples from sentences to porter tokens"""
+    return [sentence_to_bag_of_words(batch_of_sentences) for batch_of_sentences in examples]
