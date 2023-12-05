@@ -32,7 +32,38 @@ book_urls = {
 
 }
 
-book2author = {
+book_starting_sentence = {
+'The Great Gatsby':'In my younger and more vulnerable years',
+'This Side of Paradise':'Amory Blaine inherited from his mother every trait',
+'The Beautiful and the Damned':'In 1913, when Anthony Patch was twenty-five',
+
+'The Sun Also Rises':'Robert Cohn was once middleweight boxing champion of Princeton',
+'Men Without Women':'MANUEL GARCIA climbed the stairs',
+'In Our Time':'Everybody was drunk.',
+
+'The Mayor of Casterbridge':'One evening of late summer',
+'Jude the Obscure':'The schoolmaster was leaving the village',
+'Return of the Native':'A Saturday afternoon in November',
+
+'A Tale of Two Cities':'It was the best of times, it was the worst of times',
+'Great Expectations':'My father’s family name being Pirrip',
+'Bleak House':'London. Michaelmas term lately over',
+
+'Emma':'Emma Woodhouse, handsome, clever, and rich',
+'Sense and Sensibility':'The family of Dashwood',
+'Pride and Prejudice':'It is a truth universally acknowledged',
+
+'The Wisdom of Father Brown':'THE consulting-rooms of Dr Orion Hood',
+'The Man Who Was Thursday':'The suburb of Saffron Park lay on the sunset side of London',
+'The Ball and the Cross':'The flying ship of Professor Lucifer sang',
+
+'As You Like It':'SCENE:',
+'Julius Caesar':'Enter Flauius,',
+'Hamlet':'Enter Barnardo',
+}
+    
+
+title2author = {
 'The Great Gatsby':'fitzgerald',
 'This Side of Paradise':'fitzgerald',
 'The Beautiful and the Damned':'fitzgerald',
@@ -62,6 +93,15 @@ book2author = {
 'Hamlet':'shakespeare',
 }
 
+author2id = {
+    'fitzgerald':0,
+           'hemingway':1,
+           'hardy':2,
+           'dickens':3,
+           'austen':4,
+           'chesterton':5,
+           'shakespeare':6
+}
 
 book_map = {
 
