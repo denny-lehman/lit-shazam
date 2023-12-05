@@ -33,7 +33,7 @@ def remove_bookend(book:str)->str:
     end_of_book_pattern = r'\*\*\* END OF THE PROJECT GUTENBERG EBOOK [\w\d\s]+ \*\*\*'
     match = re.search(end_of_book_pattern, book)
     if match is None:
-        print('could not find project gutenberg ending')
+        print(f'could not find project gutenberg ending of {book}')
         raise ValueError
     last_character = match.start()
     return book[:last_character]
@@ -43,7 +43,7 @@ def remove_book_start(book:str)->str:
     start_of_book_pattern = r'\*\*\* START OF THE PROJECT GUTENBERG EBOOK [\w\d\s]+ \*\*\*'
     match = re.search(start_of_book_pattern, book)
     if match is None:
-        print('could not find project gutenberg beginning')
+        print(f'could not find project gutenberg beginning of {book}')
         raise ValueError
     first_character = match.end()
     return book[first_character:]
