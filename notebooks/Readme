@@ -1,5 +1,5 @@
 Notebook Descriptions
-1. lit_shazam_data_prep_chunking
+1. OLD: lit_shazam_data_prep_chunking
 Preprocess data from NLTK literature corpus
 Creates binary labeled data -- Jane Austen author novels as the Positive class
 Creates training, validation, and testing data from the corpus and stores to Drive in parquet format
@@ -16,14 +16,17 @@ Encodes multiclassification data set into BERT base cased encoding format
 Trains classification layer on top of BERT pre-trained model
 Evaluate performance and run metrics
 
-4. lit_shazam_data_prep
+4. lit_shazam_data_prep ... MAIN
 Prepares data from the Gutenberg Project corpus
 This notebook prepares the "official" project data, unlike notebook 1. which is for the NLTK corpus
 
-5. RoBERTa
+5. RoBERTa ... MAIN
 Notebook for building, encoding, and executing with the RoBERTa transformer
 
 6. lit_shazam_bert
 Encodes multiclassification data set into BERT base uncased encoding format
 Trains classification layer on top of BERT pre-trained model
 Evaluate performance and run metrics
+
+7. Ensembler ... MAIN
+Runs SGDClassifier, Random Forest, RoBERTa predictions
