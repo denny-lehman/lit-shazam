@@ -1,10 +1,9 @@
 ## Documents we used!
 
     | | Sentence #  | Word    | POS   | Tag   |
-|id| Document | description | link |
-|---:|:-------------|:-----------|:------|:------|
-| 1 | Sentence: 1  | They       | PRP   | O     |
-| 2 | Sentence: 1  | marched    | VBD   | O     |
+
+| id | Document     | description | link |
+|---:|:-------------|:------------|:------|
 | 2 | Project Shared Drive | The google drive cloud repository for all of our non-code work | https://drive.google.com/drive/folders/1x0v5jpTWA9mk2K9WgjXEYvZ7t877OsPd?usp=sharing |
 | 3 | Lit-Shazam Status report | the powerpoint we used to address ideas and questions when meeting with Mark | https://docs.google.com/presentation/d/1LZcgV0HZ5oSkdv_Y_m6WQXlBxWf5CRCEUZxKQ0Gj6Wc/edit?usp=sharing | 
 | 4 | Development Pipeline | A google drawing of the proposed and implemented development pipeline for the project | https://docs.google.com/drawings/d/1N66EwyiHsmB4gy-E9-8KOX7ZH0S2BiEy9yVOcrLUx44/edit?usp=sharing |
@@ -23,6 +22,7 @@
 | 6 | RoBERTa | https://arxiv.org/pdf/1907.11692.pdf | The RoBERTa paper - a better BERT| 
 
 Authorship Attribution Papers
+|id | Title | Link | Description|
 |---|---|---|---|
 | 1 | Function words for AA | https://arxiv.org/pdf/1406.4469.pdf | An important paper because function words are great at authorship attribution because they - are subconcious, span genres.|
 | 2 | Micro Message AA | https://aclanthology.org/D13-1193.pdf | Finding an authors unique signature when the text is the size of a tweet!| 
@@ -32,5 +32,7 @@ Authorship Attribution Papers
 
 ## Code of interest!
 
+|id | Title | Link | Description|
+|---|---|---|---|
 | 1 | Out of core processing | https://scikit-learn.org/stable/auto_examples/applications/plot_out_of_core_classification.html#sphx-glr-auto-examples-applications-plot-out-of-core-classification-py | when text can't fit into memory or new words are found in a corpus |
 
