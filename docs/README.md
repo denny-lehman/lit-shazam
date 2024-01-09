@@ -7,6 +7,9 @@
 | 2 | Project Shared Drive | The google drive cloud repository for all of our non-code work | https://drive.google.com/drive/folders/1x0v5jpTWA9mk2K9WgjXEYvZ7t877OsPd?usp=sharing |
 | 3 | Lit-Shazam Status report | the powerpoint we used to address ideas and questions when meeting with Mark | https://docs.google.com/presentation/d/1LZcgV0HZ5oSkdv_Y_m6WQXlBxWf5CRCEUZxKQ0Gj6Wc/edit?usp=sharing | 
 | 4 | Development Pipeline | A google drawing of the proposed and implemented development pipeline for the project | https://docs.google.com/drawings/d/1N66EwyiHsmB4gy-E9-8KOX7ZH0S2BiEy9yVOcrLUx44/edit?usp=sharing |
+| 5 | DeBERTa Model Fine-tuned for Commonsense Validation and Explanation | https://drive.google.com/file/d/1wBhk0tJ7vJje_rsZlZhUeGqA1x_Mkm6T/view?usp=sharing | 
+| 6 | StackReQA: Stack Overflow Retrieval Question Answering | https://drive.google.com/file/d/1DQsZA9xWzw3ZO-3KKrnOOatRui7KLD1q/view?usp=sharing |
+| 7 | OTHER SAMPLE PROJECTS | https://drive.google.com/drive/folders/11JVnZzfyA9oVo-hfB_QmwA7d643b8HG6 |
 
 
 
@@ -36,4 +39,7 @@ Authorship Attribution Papers
 |id | Title | Link | Description|
 |---|---|---|---|
 | 1 | Out of core processing | https://scikit-learn.org/stable/auto_examples/applications/plot_out_of_core_classification.html#sphx-glr-auto-examples-applications-plot-out-of-core-classification-py | when text can't fit into memory or new words are found in a corpus |
+| 2 | Example of Naive Bayes text preprocessing code for CountVectorize | https://github.com/x4nth055/sentiment_analysis_naive_bayes/blob/master/preprocess.py#L1 |
+| 3 | Example of text preprocessing for Naive Bayes classification | https://github.com/duranbe/clustering/blob/main/TextClassificationNaiveBayes.ipynb |
+| 4 | Medium: NLTK with Project Gutenberg | https://odonnell31.medium.com/nlp-in-python-a-primer-on-nltk-with-project-gutenberg-fcc02be63d9a |
 
