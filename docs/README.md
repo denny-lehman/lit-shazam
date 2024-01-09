@@ -19,7 +19,8 @@
 | 3 | Visual Literature Timeline | https://pedagoglog.wordpress.com/2016/05/06/american-literature-timeline/ | A peer through time to base our authors and their temporal relationships | 
 | 4 | Overview of RoBERTa| https://www.geeksforgeeks.org/overview-of-roberta-model/ | Roberta is a better trained BERT model|
 | 5 | How to read a paper | http://ccr.sigcomm.org/online/files/p83-keshavA.pdf | A good guide on reading all these papers we like| 
-| 6 | RoBERTa | https://arxiv.org/pdf/1907.11692.pdf | The RoBERTa paper - a better BERT| 
+| 6 | RoBERTa | https://arxiv.org/pdf/1907.11692.pdf | The RoBERTa paper - a better BERT | 
+| 7 | BERTweet | https://aclanthology.org/2020.emnlp-demos.2.pdf | Tweet NLP tasks: POS tagging, NER, text classification |
 
 Authorship Attribution Papers
 |id | Title | Link | Description|
